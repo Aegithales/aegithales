@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Aegithales">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2937">
+
+    
+    <title>Non-spatial sampling of transitional probabilities</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="../blog.css">
+
+    <!-- this strange thing is needed for syntax highlighting... -->
+    <style>
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+        div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+        ul.task-list{list-style: none;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="../img/mascot-small.png" alt="mascot-small.png">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="probability-anomalies-on-evolutionary-side-branches">Probability anomalies on evolutionary side-branches</h2>
+            <p>A <em>probability anomaly</em> is when we observe an extremely unlikely occurrence. Anthropic sampling – selecting an ELP (Earth-Like Planed) by being born on it – distorts probabilities, so that we observe a chain of highly unprobable mutational events, leading to intelligent life.</p>
+            <p>But anthropic sampling alone does not explain similar chain of unprobable transitions on side-branches.</p>
+            <p>Eg why do we observe a diverse multitude of insects, birds, mushrooms, etc etc on earth, when they are not ‘needed’ for intelligent life?</p>
+            <p>This is a puzzle that made into <em>my</em> list of Millenial Problems.</p>
+            <h2 id="the-transitional-probability-is-ill-defined-on-an-infinite-set-of-elps">The Transitional Probability is ill-defined on an infinite set of ELPs</h2>
+            <ul>
+            <li><p>Some random phenomena cannot be treated in the framework of probability theory. An example is quantum theory, where ‘events’ don’t have the distributive property.</p></li>
+            <li><p>A crucial tenet of probability theory is that it is impossible to define uniform probability distribution on a countably infinite set.</p></li>
+            <li><p>So any phenomenon that would allow uniform sampling from an infinite set cannot be assigned a probability.</p></li>
+            <li><p>Now consider a system with two states: A and B, and a single, random transition <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \to B</annotation></semantics></math>. Initially, the system is in state A, and after time T, it is found in state B with propability <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>R</mi><mi>P</mi><mo>=</mo><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">TRP = P(A \to B)</annotation></semantics></math>.</p>
+            <p>If you take N such systems, then the number of B-states that you will observe after time T is approximately <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>c</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>=</mo><mi>N</mi><mo>*</mo><mi>T</mi><mi>R</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">B_{count} = N*TRP</annotation></semantics></math>.</p></li>
+            <li><p>This allows the estimation of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>R</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">TRP</annotation></semantics></math>, as <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>R</mi><mi>P</mi><mo>=</mo><msub><mi>B</mi><mrow><mi>c</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow></msub><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">TRP = B_{count} / N</annotation></semantics></math>.</p></li>
+            <li><p>Now take <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">N \to \infty</annotation></semantics></math>. Then <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>c</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow></msub><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">B_{count} \to \infty</annotation></semantics></math> as well, so the estimation <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>R</mi><mi>P</mi><mo>=</mo><msub><mi>B</mi><mrow><mi>c</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi></mrow></msub><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">TRP = B_{count} / N</annotation></semantics></math> does not work any more.</p></li>
+            <li><p>Why can’t we say that we select a random <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> element from the infinite set, and count the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>s there, saying that this is an ‘estimation’?</p>
+            <p>After all, opinion polls do the same all the time.</p>
+            <p>The problem is that however large <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> is, that sample will never be representative, unless we assume that they are picked <strong>randomly</strong> from the infinite set.</p>
+            <p>And that is not possible, as it would assume a uniform distribution over an infinite set.</p></li>
+            <li><p>Now assume that we know the TRP. Then we can compute the probability of finding a B in any set with cardinality N: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>T</mi><mi>R</mi><mi>P</mi><mo>*</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">P(B) = TRP * N</annotation></semantics></math>.</p>
+            <p>However, if N is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ℵ</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\aleph_0</annotation></semantics></math>, this computation breaks down.</p></li>
+            </ul>
+            <h2 id="how-non-spatial-sampling-can-yield-any-frequency-of-event-b">How non-spatial sampling can yield any frequency of event B</h2>
+            <p>Let me demonstrate the breakdown of probability theory first on a trivial problem.</p>
+            <ul>
+            <li><p>Assume that we pick a random non-negative integer, using a pseudo-random number generator.</p>
+            <p>What is the probability that we pick an even number?</p></li>
+            <li><p>It seems the answer is obvious: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">P = 0.5</annotation></semantics></math></p>
+            <p>However, it is very difficult to justify this result.</p></li>
+            <li><p>So if we were picking an integer from a bounded range, eg between 0 and M, where M is very large, then obviously the amount of even vs odd numbers are the same in this set, so <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">P = 0.5</annotation></semantics></math> is true.</p>
+            <p>However, if the range is not bounded, if we allow picking any integer, then comparing the even vs odd numbers is nontrivial.</p>
+            <p>Eg it is possible to rearrange the integers so that only every 100th is even, and two even numbers are separated by 99 odd numbers.</p>
+            <p>Is it still <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">P = 0.5</annotation></semantics></math> that we pick an even number?</p></li>
+            <li><p>If we allow any linear (total) ordering of non-negative integers then it is easy to see that we can pick an ordering where any two consecutive even numbers are separated by infinitely many odd numbers: arrange the integers in a 2-dim array like below, and read out row-by-row (not diagonally!), like <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>9</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">2, 1, 3, 7, ... 4, 5, 9, ...</annotation></semantics></math></p>
+            <p>So eg 2 and 4 are separated by infinitely many odd numbers, 4 and 6 as well, and so on:</p></li>
+            </ul>
+            <p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtable> <mtr> <mtd><mspace height="1.5em"/><mn>2</mn></mtd> <mtd><mspace width="2em"/><mn>1</mn></mtd> <mtd><mspace width="2em"/><mn>3</mn></mtd> <mtd><mspace width="2em"/><mn>7</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mn>4</mn></mtd> <mtd><mspace width="2em"/><mn>5</mn></mtd> <mtd><mspace width="2em"/><mn>9</mn></mtd> <mtd><mspace width="2em"/><mn>15</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mn>6</mn></mtd> <mtd><mspace width="2em"/><mn>11</mn></mtd> <mtd><mspace width="2em"/><mn>17</mn></mtd> <mtd><mspace width="2em"/><mn>25</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mn>8</mn></mtd> <mtd><mspace width="2em"/><mn>19</mn></mtd> <mtd><mspace width="2em"/><mn>27</mn></mtd> <mtd><mspace width="2em"/><mn>37</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋰</mo></mtd> </mtr> </mtable> </math></p>
+            <ul>
+            <li>Obviously, we can rearrange the positive integers so that the odd numbers become ‘infinitely rare’:</li>
+            </ul>
+            <p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> <mtable> <mtr> <mtd><mspace height="1.5em"/><mn>1</mn></mtd> <mtd><mspace width="2em"/><mn>2</mn></mtd> <mtd><mspace width="2em"/><mn>4</mn></mtd> <mtd><mspace width="2em"/><mn>8</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mn>3</mn></mtd> <mtd><mspace width="2em"/><mn>6</mn></mtd> <mtd><mspace width="2em"/><mn>10</mn></mtd> <mtd><mspace width="2em"/><mn>16</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mn>5</mn></mtd> <mtd><mspace width="2em"/><mn>12</mn></mtd> <mtd><mspace width="2em"/><mn>18</mn></mtd> <mtd><mspace width="2em"/><mn>26</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mn>7</mn></mtd> <mtd><mspace width="2em"/><mn>20</mn></mtd> <mtd><mspace width="2em"/><mn>28</mn></mtd> <mtd><mspace width="2em"/><mn>38</mn></mtd> <mtd><mspace width="2em"/><mo>…</mo></mtd> </mtr> <mtr> <mtd><mspace height="1.5em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋮</mo></mtd> <mtd><mspace width="2em"/><mo>⋰</mo></mtd> </mtr> </mtable> </math></p>
+            <ul>
+            <li>Conclusion: unless the even and odd numbers are arranged spatially in their usual alternating pattern, and unless we pick a random number by picking uniformly a random location, relative to this arrangement (aka ‘spatial’ sampling), there is no reason to assume that <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mi>v</mi><mi>e</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>o</mi><mi>d</mi><mi>d</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">P(even) = P(odd)</annotation></semantics></math></li>
+            </ul>
+            <h2 id="how-is-this-analogous-of-the-transitional-probabilities-of-evolutionary-changes">How is this analogous of the transitional probabilities of evolutionary changes?</h2>
+            <p>Back to our problem of selecting an ELP ‘randomly’ and checking if the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \to B</annotation></semantics></math> transition happened or not:</p>
+            <ul>
+            <li><p>assume that we label each ELP with a unique positive integer; and assume that the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \to B</annotation></semantics></math> transition occurs only on planets with this integer being even.</p></li>
+            <li><p>Then the probability to observe the state <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> is the same as the probability of picking a random positive integer that is even.</p></li>
+            <li><p>As this latter probability is ill-defined, so is the probability of observing the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \to B</annotation></semantics></math> transition.</p></li>
+            <li><p>More precisely, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>T</mi><mi>R</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P(A \to B) = TRP</annotation></semantics></math> only if we sample the ELPs uniformly, that is, we use spatial sampling.</p>
+            <p>But selecting an ELP with intelligent life by being born on that planet is not spatial sampling, then we are not sampling the TRP.</p></li>
+            <li><p>This is the reason we observe <em>probability anomalies</em>, instead of observing evolutionary transitions of the highest TRP.</p></li>
+            </ul>
+        </main>
+    </div>
+
+</body>
+</html>
