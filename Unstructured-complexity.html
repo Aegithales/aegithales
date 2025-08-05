@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Aegithales">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1f2937">
+
+    
+    <title>Unstructured complexity</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="blog.css">
+
+    <!-- this strange thing is needed for syntax highlighting... -->
+    <style>
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+        div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+        ul.task-list{list-style: none;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="img/mascot-small.png" alt="mascot-small.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 id="unstructured-complexity">Unstructured
+            Complexity</h2>
+            <ul>
+            <li><p>There are many measures of complexity: Kolmogorov
+            complexity, computational complexity, Krohn–Rhodes
+            complexity, Linguistic sequence complexity, etc.</p></li>
+            <li><p>But I want a complexity measure that reflects our
+            ability to explain / comprehend something with human
+            cognition, using our capacity to represent / explain a
+            system / phenomenon by combining well-understood building
+            blocks.</p></li>
+            <li><p>Eg well-written software has an easy-to-understand
+            structure, composed of modules with well-defined API and
+            purpose.</p></li>
+            <li><p>But some natural systems might lack this modular
+            structure, bearing a complexity that is impenetrable for the
+            human mind, like</p>
+            <ul>
+            <li>embryonic development;</li>
+            <li>metamorphosis of insects;</li>
+            <li>how instinctive behaviour is encoded in the genome and
+            the CNS of animals;</li>
+            <li>evolution of some highly complex traits;</li>
+            </ul></li>
+            <li><p>Note that this is not about size. A system may be
+            huge, and still easy to understand. It is about structure or
+            the lack of it.</p></li>
+            <li><p>My first attempt is what I call <em>diagrammatic
+            complexity</em>: a ‘diagram’ is a graph of nodes that are
+            interconnected by labeled edges.</p>
+            <p>A ‘node’ may stand for a subgraph, which is then
+            presented on another diagram.</p>
+            <p>Decomposing the full diagram into smaller diagrams is
+            only possible if the diagram has some regularity /
+            structure.</p>
+            <p>The complexity is the size the of the largest diagram
+            after the decomposition.</p></li>
+            <li><p>Back to our examples: a well-written software is
+            obviously decomposable into smaller ‘diagrams’, like
+            classes, functions, etc. that are re-used.</p>
+            <p>But the genomic features, controlling development or
+            metamorphosis, may lack such a modular structure.</p>
+            <p>Which means we might be completely unable to understand
+            it.</p></li>
+            <li><p>I hope that some important systems are still within
+            the bounds of structured complexity, amenable for human
+            cognition:</p>
+            <ul>
+            <li>our brain and our mind itself;</li>
+            <li>and the system of tissues / organs of the adult human
+            body (as a static system, excluding development).</li>
+            </ul></li>
+            </ul>
+        </main>
+    </div>
+
+</body>
+</html>
